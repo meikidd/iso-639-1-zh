@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/meikidd/iso-639-1-zh#readme",
   "dependencies": {
-    "iso-639-1": "~1.2.1"
+    "iso-639-1": "^1.2.1"
   },
   "devDependencies": {
     "babel": "~6.5.2",
