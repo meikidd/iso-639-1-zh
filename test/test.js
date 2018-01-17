@@ -1,9 +1,8 @@
-import 'babel-polyfill'
-import assert from 'assert';
-import ISO639ZH from '../build/index';
-import LANGUAGES_ZH_NAMES from '../build/data';
+const assert = require('assert');
+const ISO639ZH = require('../build/index');
+const LANGUAGES_ZH_NAMES = require('../build/data');
 
-const zhNameList = Object.values(LANGUAGES_ZH_NAMES)
+const zhNameList = Object.values(LANGUAGES_ZH_NAMES);
 
 describe('getZhName()', () => {
   it('en', () => assert.equal(ISO639ZH.getZhName('en'), '英语'))
