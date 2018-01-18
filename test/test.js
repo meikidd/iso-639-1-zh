@@ -2,7 +2,7 @@ const assert = require('assert');
 const ISO639ZH = require('../build/index');
 const LANGUAGES_ZH_NAMES = require('../build/data');
 
-const zhNameList = Object.values(LANGUAGES_ZH_NAMES);
+const zhNameList = Object.keys(LANGUAGES_ZH_NAMES).map(code => LANGUAGES_ZH_NAMES[code]);
 
 describe('getZhName()', () => {
   it('en', () => assert.equal(ISO639ZH.getZhName('en'), '英语'));
