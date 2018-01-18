@@ -188,36 +188,6 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ "./node_modules/babel-runtime/helpers/extends.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-var _assign = __webpack_require__("./node_modules/babel-runtime/core-js/object/assign.js");
-
-var _assign2 = _interopRequireDefault(_assign);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _assign2.default || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-/***/ }),
-
 /***/ "./node_modules/babel-runtime/helpers/get.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3023,9 +2993,9 @@ var _values = __webpack_require__("./node_modules/babel-runtime/core-js/object/v
 
 var _values2 = _interopRequireDefault(_values);
 
-var _extends2 = __webpack_require__("./node_modules/babel-runtime/helpers/extends.js");
+var _assign = __webpack_require__("./node_modules/babel-runtime/core-js/object/assign.js");
 
-var _extends3 = _interopRequireDefault(_extends2);
+var _assign2 = _interopRequireDefault(_assign);
 
 var _getPrototypeOf = __webpack_require__("./node_modules/babel-runtime/core-js/object/get-prototype-of.js");
 
@@ -3072,8 +3042,10 @@ var ISO6391ZH = function (_ISO) {
   (0, _createClass3.default)(ISO6391ZH, null, [{
     key: 'getLanguages',
     value: function getLanguages(codes) {
-      return (0, _get3.default)(ISO6391ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO6391ZH), 'getLanguages', this).call(this, codes).map(function (l) {
-        return (0, _extends3.default)({}, l, { zhName: ISO6391ZH.getZhName(l.code) });
+      return (0, _get3.default)(ISO6391ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO6391ZH), 'getLanguages', this).call(this, codes).map(function (language) {
+        return (0, _assign2.default)(language, {
+          zhName: ISO6391ZH.getZhName(language.code)
+        });
       });
     }
   }, {
