@@ -1,8 +1,14 @@
 # iso-639-1-zh
-[![NPM version][npm-image]][npm-url]
 
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Download Count][download-url]][npm-url]
+
+[travis-image]: https://travis-ci.org/meikidd/iso-639-1-zh.svg?branch=master
+[travis-url]: https://travis-ci.org/meikidd/iso-639-1-zh
 [npm-image]: https://img.shields.io/npm/v/iso-639-1-zh.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/iso-639-1-zh
+[download-url]: https://img.shields.io/npm/dt/iso-639-1-zh.svg?style=flat-square
 
 Chinese name for iso-639-1 languages.   
 各国语言的中文名称. 例如：zh - 中文; en - 英语; es - 西班牙语;
