@@ -1,9 +1,9 @@
-import ISO639 from 'iso-639-1';
+import ISO6391 from 'iso-639-1';
 import LANGUAGES_ZH_NAMES from './data';
 
-export default class ISO639ZH extends ISO639 {
+export default class ISO6391ZH extends ISO6391 {
   static getLanguages(codes) {
-    return super.getLanguages(codes).map(l => ({ ...l, zhName: ISO639ZH.getZhName(l.code) }))
+    return super.getLanguages(codes).map(l => ({ ...l, zhName: ISO6391ZH.getZhName(l.code) }))
   }
 
   static getZhName(code) {

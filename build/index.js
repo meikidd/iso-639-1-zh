@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["ISO6391"] = factory();
+		exports["ISO6391ZH"] = factory();
 	else
-		root["ISO6391"] = factory();
+		root["ISO6391ZH"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -3061,25 +3061,25 @@ var _data2 = _interopRequireDefault(_data);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ISO639ZH = function (_ISO) {
-  (0, _inherits3.default)(ISO639ZH, _ISO);
+var ISO6391ZH = function (_ISO) {
+  (0, _inherits3.default)(ISO6391ZH, _ISO);
 
-  function ISO639ZH() {
-    (0, _classCallCheck3.default)(this, ISO639ZH);
-    return (0, _possibleConstructorReturn3.default)(this, (ISO639ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO639ZH)).apply(this, arguments));
+  function ISO6391ZH() {
+    (0, _classCallCheck3.default)(this, ISO6391ZH);
+    return (0, _possibleConstructorReturn3.default)(this, (ISO6391ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO6391ZH)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(ISO639ZH, null, [{
+  (0, _createClass3.default)(ISO6391ZH, null, [{
     key: 'getLanguages',
     value: function getLanguages(codes) {
-      return (0, _get3.default)(ISO639ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO639ZH), 'getLanguages', this).call(this, codes).map(function (l) {
-        return (0, _extends3.default)({}, l, { zhName: ISO639ZH.getZhName(l.code) });
+      return (0, _get3.default)(ISO6391ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO6391ZH), 'getLanguages', this).call(this, codes).map(function (l) {
+        return (0, _extends3.default)({}, l, { zhName: ISO6391ZH.getZhName(l.code) });
       });
     }
   }, {
     key: 'getZhName',
     value: function getZhName(code) {
-      return (0, _get3.default)(ISO639ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO639ZH), 'validate', this).call(this, code) ? _data2.default[code] : '';
+      return (0, _get3.default)(ISO6391ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO6391ZH), 'validate', this).call(this, code) ? _data2.default[code] : '';
     }
   }, {
     key: 'getAllZhNames',
@@ -3087,10 +3087,10 @@ var ISO639ZH = function (_ISO) {
       return (0, _values2.default)(_data2.default);
     }
   }]);
-  return ISO639ZH;
+  return ISO6391ZH;
 }(_iso2.default);
 
-exports.default = ISO639ZH;
+exports.default = ISO6391ZH;
 module.exports = exports['default'];
 
 /***/ })

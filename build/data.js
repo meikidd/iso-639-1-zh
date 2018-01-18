@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["ISO6391"] = factory();
+		exports["ISO6391ZH"] = factory();
 	else
-		root["ISO6391"] = factory();
+		root["ISO6391ZH"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
