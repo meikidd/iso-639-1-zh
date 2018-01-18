@@ -3,15 +3,16 @@ import LANGUAGES_ZH_NAMES from './data';
 
 export default class ISO6391ZH extends ISO6391 {
   static getLanguages(codes) {
-    return super.getLanguages(codes).map(l => ({ ...l, zhName: ISO6391ZH.getZhName(l.code) }))
+    return super
+      .getLanguages(codes)
+      .map(l => ({ ...l, zhName: ISO6391ZH.getZhName(l.code) }));
   }
 
   static getZhName(code) {
-    return super.validate(code) ? LANGUAGES_ZH_NAMES[code] : ''
+    return super.validate(code) ? LANGUAGES_ZH_NAMES[code] : '';
   }
 
   static getAllZhNames() {
-    return Object.values(LANGUAGES_ZH_NAMES)
+    return Object.values(LANGUAGES_ZH_NAMES);
   }
 }
-
