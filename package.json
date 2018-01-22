@@ -1,6 +1,6 @@
 {
   "name": "iso-639-1-zh",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Chinese name for iso-639-1 languages",
   "main": "build/index.js",
   "module": "src/index.js",
