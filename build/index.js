@@ -3043,9 +3043,10 @@ var ISO6391ZH = function (_ISO) {
     key: 'getLanguages',
     value: function getLanguages(codes) {
       return (0, _get3.default)(ISO6391ZH.__proto__ || (0, _getPrototypeOf2.default)(ISO6391ZH), 'getLanguages', this).call(this, codes).map(function (language) {
-        return (0, _assign2.default)(language, {
+        (0, _assign2.default)(language, {
           zhName: ISO6391ZH.getZhName(language.code)
         });
+        return language;
       });
     }
   }, {
